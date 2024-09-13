@@ -11,11 +11,15 @@ const WeatherDetails = ({ data, error }) => {
         </Typography>
       ) : (
         <>
-          <Typography variant="h2">{data.location.name}</Typography>
+          <Typography variant="h4" fontWeight="bold">
+            {data.location.name.toUpperCase()}
+          </Typography>
           <Tooltip placement="right" arrow title={data.current.condition.text}>
             <img src={data.current.condition.icon} />
           </Tooltip>
-          <Typography variant="h4">{Math.round(data.current.temp_c)}°C</Typography>
+          <Typography variant="h4" fontWeight="bold">
+            {Math.round(data.current.temp_c)}°C
+          </Typography>
         </>
       )}
     </CardStyled>

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { debounce } from 'debounce'
 import { useQuery } from 'react-query'
 import WeatherApi from '../../resources/services/weather'

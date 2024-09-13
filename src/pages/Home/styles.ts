@@ -6,4 +6,5 @@ export const HomeStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 `
